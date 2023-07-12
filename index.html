@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230711145914">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230712181907">
 	<title>Главная</title>
 </head>
 <body class="body">
@@ -18,11 +18,11 @@
 			</div>
 			<nav class="menu__body">
 				<ul class="menu__list">
-					<li><a href="#" class="menu__link">Home</a></li>
-					<li><a href="#" class="menu__link">About Us</a></li>
-					<li><a href="#" class="menu__link">Projects</a></li>
-					<li><a href="#" class="menu__link">Services</a></li>
-					<li><a href="#" class="menu__link">Contact Us</a></li>
+					<li><a href="#" class="menu__link link-to-section" data-goto=".promo">Home</a></li>
+					<li><a href="#" class="menu__link link-to-section" data-goto=".about">About Us</a></li>
+					<li><a href="#" class="menu__link link-to-section" data-goto=".projects">Projects</a></li>
+					<li><a href="#" class="menu__link link-to-section" data-goto=".services">Services</a></li>
+					<li><a href="#" class="menu__link link-to-section" data-goto=".feedback">Contact Us</a></li>
 					<!--<li>
 						<a href="#" class="menu__link">Страница №1</a>
 						<span class="menu__arrow"></span>
@@ -106,20 +106,299 @@
 			<section class="about">
 				<div class="about__container container">
 					<div class="about__content">
-						<picture><source srcset="img/about/portrait.webp" type="image/webp"><picture><source srcset="img/about/portrait.webp" type="image/webp"><img src="img/about/portrait.jpg" alt=""></picture></picture>
+						<div class="about__img">
+							<picture><source srcset="img/about/portrait.webp" type="image/webp"><picture><source srcset="img/about/portrait.webp" type="image/webp"><img src="img/about/portrait.jpg" alt=""></picture></picture>
+						</div>
 						<div class="about__text-block text-block-about">
 							<div class="text-block-about__title">About us</div>
 							<div class="text-block-about__text">
 								<p>For more than 30 years we have been delivering world-class construction and we’ve built many lasting relationships along the way. </p>
 								<p>We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
 							</div>
+							<a href="#" class="btn text-block-about__btn btn_white">
+								More on Our History
+							</a>
 						</div>
 					</div>
 				</div>
 			</section>
+			<section class="services">
+				<div class="container services__container container_small">
+					<div class="title-block services__title-block">
+						<div class="title services__title">Services</div>
+					</div>
+					<div class="services__content">
+						<div class="services__row row">
+							<div class="services__col col">
+								<a href="#" class="services__item item-services">
+									<div class="item-services__icon"><img src="img/services/01.svg" alt=""></div>
+									<div class="item-services__line"></div>
+									<div class="item-services__name">Construction</div>
+								</a>
+							</div>
+							<div class="services__col col">
+								<a href="#" class="services__item item-services">
+									<div class="item-services__icon"><img src="img/services/02.svg" alt=""></div>
+									<div class="item-services__line"></div>
+									<div class="item-services__name">Renovation</div>
+								</a>
+							</div>
+							<div class="services__col col">
+								<a href="#" class="services__item item-services">
+									<div class="item-services__icon"><img src="img/services/03.svg" alt=""></div>
+									<div class="item-services__line"></div>
+									<div class="item-services__name">Consultation</div>
+								</a>
+							</div>
+							<div class="services__col col">
+								<a href="#" class="services__item item-services">
+									<div class="item-services__icon"><img src="img/services/04.svg" alt=""></div>
+									<div class="item-services__line"></div>
+									<div class="item-services__name">Repair Services</div>
+								</a>
+							</div>
+							<div class="services__col col">
+								<a href="#" class="services__item item-services">
+									<div class="item-services__icon"><img src="img/services/05.svg" alt=""></div>
+									<div class="item-services__line"></div>
+									<div class="item-services__name">Architecture</div>
+								</a>
+							</div>
+							<div class="services__col col">
+								<a href="#" class="services__item item-services">
+									<div class="item-services__icon"><img src="img/services/06.svg" alt=""></div>
+									<div class="item-services__line"></div>
+									<div class="item-services__name">Electric</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="consultation">
+				<div class="container consultation__container">
+					<div class="consultation__information">
+						<div class="title consultation__title">Free consultation with exceptional quality</div>
+						<div class="consultation__phone">Just one call away: <a href="tel:+1234567890">+84 1102 2703</a></div>
+					</div>
+					<div class="btn consultation__btn">Get your consultation</div>
+				</div>
+			</div>
+			<section class="projects">
+				<div class="projects__container container">
+					<div class="title-block projects__title-block">
+						<div class="title projects__title">Projects</div>
+					</div>
+					<div class="projects__content">
+						<!--<ul class="projects__filter filter-project">
+							<li class="filter-project__item filter-item active">All</li>
+							<li class="filter-project__item filter-item">Commercial</li>
+							<li class="filter-project__item filter-item">Residential</li>
+							<li class="filter-project__item filter-item">Other</li>
+						</ul>-->
+						<div class="projects__slider">
+							<div class="swiper projects__swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" data-filter="commercial">
+										<div class="swiper-slide__content">
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide" data-filter="commercial">
+										<div class="swiper-slide__content">
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide" data-filter="residential">
+										<div class="swiper-slide__content">
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide" data-filter="residential">
+										<div class="swiper-slide__content">
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide" data-filter="other">
+										<div class="swiper-slide__content">
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+											<div class="swiper-slide__item item-swiper-slide">
+												<div class="item-swiper-slide__image"><picture><source srcset="img/projects/01.webp" type="image/webp"><picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt=""></picture></picture></div>
+												<div class="item-swiper-slide__text">
+													<div class="item-swiper-slide__name">Wildstone Infra Hotel</div>
+													<div class="item-swiper-slide__address">2715 Ash Dr. San Jose, South Dakota</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="projects__button-wrapper">
+									<div class="projects__swiper-button-prev swiper-button swiper-button-prev"><img src="img/promo/left.svg" alt="">Back</div>
+									<div class="projects__swiper-pagination"></div>
+									<div class="projects__swiper-button-next swiper-button swiper-button-next">Next<img src="img/promo/right.svg" alt=""></div>
+								</div>
+							  </div>
+						
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<section class="feedback">
+				<div class="container feedback__container container_small">
+					<div class="title-block feedback__title-block">
+						<div class="title feedback__title ">What can us do for you?</div>
+						<div class="subtitle feedback__subtitle">We are ready to work on a project of any complexity, whether it’s commercial or residential.</div>
+					</div>
+					<form class="form feedback__form form-feedback">
+						<div class="form-feedback__input-wrapper">
+							<input placeholder="Your Name" type="text" class="form-feedback__input">
+							<input placeholder="Email" type="text" class="form-feedback__input">
+						</div>
+						<div class="form-feedback__input-wrapper">
+							<input placeholder="Reason for Contacting" type="text" class="form-feedback__input">
+							<input placeholder="Phone" type="text" class="form-feedback__input">
+						</div>
+						<textarea placeholder="Message" name="" id="" cols="30" rows="10" class="form-feedback__textarea"></textarea>
+						<button class="form-feedback__btn btn btn_blue">Submit</button>
+					</form>
+				</div>
+			</section>
 		</main>
-		<footer class="footer"></footer>
+		<footer class="footer">
+	<div class="container footer__container">
+		TheBox Company © 2022. All Rights Reserved
 	</div>
-	<script src="js/app.min.js?_v=20230711145914"></script>
+</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230712181907"></script>
 </body>
 </html>
